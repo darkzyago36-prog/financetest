@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#dce9ff","on-tertiary-fixed":"#001a42","on-background":"#0b1c30","on-secondary-fixed-variant":"#3f465c","inverse-surface":"#213145","primary-fixed-dim":"#68dba9","outline":"#6d7a72","surface":"#f8f9ff","error-container":"#ffdad6","surface-dim":"#cbdbf5","on-secondary":"#ffffff","on-surface":"#0b1c30","tertiary-fixed-dim":"#adc6ff","inverse-primary":"#68dba9","on-secondary-container":"#5c647a","on-primary-container":"#f5fff7","primary-fixed":"#85f8c4","on-surface-variant":"#3d4a42","on-primary":"#ffffff","background":"#f8f9ff","on-secondary-fixed":"#131b2e","tertiary-fixed":"#d8e2ff","secondary-fixed-dim":"#bec6e0","surface-container-highest":"#d3e4fe","primary":"#006948","on-error-container":"#93000a","on-tertiary":"#ffffff","surface-bright":"#f8f9ff","error":"#ba1a1a","inverse-on-surface":"#eaf1ff","on-error":"#ffffff","secondary":"#565e74","primary-container":"#00855d","on-tertiary-fixed-variant":"#004395","tertiary-container":"#2170e4","on-tertiary-container":"#fefcff","surface-tint":"#006c4a","on-primary-fixed":"#002114","surface-container":"#e5eeff","outline-variant":"#bccac0","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#005137","secondary-container":"#dae2fd","surface-container-low":"#eff4ff","secondary-fixed":"#dae2fd","tertiary":"#0058be"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem","space-md":"1rem","gutter-sm":"1rem","margin-sm":"1rem","margin":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2rem","gutter":"1.5rem"},fontFamily:{"metric-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"metric-xl":["Plus Jakarta Sans"]},fontSize:{"metric-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.02em",fontWeight:"600"}],"body-lg":["1rem",{lineHeight:"1.5rem",letterSpacing:"0em",fontWeight:"400"}],"label-md":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.005em",fontWeight:"500"}],"body-md":["0.875rem",{lineHeight:"1.375rem",letterSpacing:"0em",fontWeight:"400"}],"headline-lg-mobile":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-lg":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"display":["3rem",{lineHeight:"3.5rem",letterSpacing:"-0.025em",fontWeight:"700"}],"display-mobile":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["0.75rem",{lineHeight:"1.125rem",letterSpacing:"0.01em",fontWeight:"400"}],"headline-sm":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"-0.005em",fontWeight:"600"}],"label-sm":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"600"}],"metric-xl":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.03em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="h-16 px-gutter flex items-center gap-space-sm"><img alt="FinanCerto Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA5CnR7b9H-bZtDeiDH18I0LlsTmicfSfDfq19NDvIukLIzIEcDBihp3NlIQUI_pMPvD8ZJpPQsPp4FCKdml06oq4M8gNNV8KcXLB9SUSDddlKEwDN8Iyi-1QuLip2jixj_D1MN9eKxgbsJllSZc7cayqStXJR8XNJGLbzTFxfmsu9brNdJwt-v43hyRcQ_5OsZayXYscuiOWNYcwUKCKEbp3vAES5bFAL3DOfEulth1lXtR-IH1T6"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">FinanCerto</span></div><nav class="px-space-md py-space-sm space-y-1 flex-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-label-md text-label-md" data-path="dashboard" href="#">Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-label-md text-label-md" data-path="movimentacoes" href="#">Movimentações</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-label-md text-label-md" data-path="categorias" href="#">Categorias</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-label-md text-label-md" data-path="contas" href="#">Contas &amp; Carteiras</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-label-md text-label-md" data-path="metas" href="#">Metas</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all font-label-md text-label-md" data-path="relatorios" href="#">Relatórios</a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.04)]" data-path="configuracoes" href="#">Configurações</a></nav></div><div class="p-space-md space-y-space-sm bg-surface-container-lowest"><div class="bg-surface-container-low rounded-xl p-space-md"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">cloud_done</span>Armazenamento</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">78%</span></div><div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden mb-space-xs"><div class="h-full bg-primary rounded-full" style="width: 78%;"></div></div><p class="font-body-sm text-body-sm text-secondary">7.8 GB de 10 GB usados</p></div><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" href="#"><span class="flex items-center gap-space-sm font-label-md text-label-md"><span class="material-symbols-outlined text-lg">support_agent</span>Ajuda &amp; Suporte</span><span class="material-symbols-outlined text-sm text-outline-variant">chevron_right</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-lg"><div class="flex items-center bg-surface-container-low rounded-xl p-1 gap-1"><button aria-label="Mês Anterior" class="w-7 h-7 flex items-center justify-center rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">chevron_left</span></button><div class="flex items-center gap-1.5 px-space-sm font-label-md text-label-md font-semibold text-on-surface"><span class="material-symbols-outlined text-base text-primary">calendar_today</span>Março, 2025</div><button aria-label="Próximo Mês" class="w-7 h-7 flex items-center justify-center rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">chevron_right</span></button><button class="px-space-sm py-1 font-label-sm text-label-sm rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-[0_1px_2px_rgba(0,0,0,0.04)]" type="button">Mês Atual</button></div></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-1.5 bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-sm rounded-xl font-label-md text-label-md font-semibold transition-all shadow-[0_1px_3px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-lg">add</span>Nova Movimentação</button><button aria-label="Notificações" class="relative w-9 h-9 flex items-center justify-center rounded-xl hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold">3</span></button><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOZs1dLX_5tNSEW1RrcYGLqkFCeDZFeaP3AtzTsmK8qmlg32EgVOS0PEtTWqosOan40seiK_E7jGYgnn91Oa6Ue6VfqQe3JGjHG6AoUzZmhinG6YutKeT9D1SV_KYMVxtNLiRUIRtPskPYxDC9cUTeVmf0uWXy6JfPVtSub_Mwt4UgMO00CZQmLGcvycwWuEifQfXB_q7LJJV2EdCa-bKmltxwFCPXnIuMspuphxStcYluMRLEr11v"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Lucas Silveira</span><span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-semibold w-max leading-none">Plano Pro</span></div></div></div></header><main class="w-full pt-16 px-gutter py-gutter bg-background min-h-screen"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Header Area -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold mb-space-xs">
+<span class="material-symbols-outlined text-sm text-primary">manage_accounts</span>
+        Painel de Controle
+      </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Configurações</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-0.5">
+        Gerencie suas preferências pessoais, segurança da conta, alertas financeiros e integrações.
+      </p>
+</div>
+<!-- Quick Feedback / Status Badge -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<span class="flex h-2.5 w-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Sincronização Ativa via Supabase</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-secondary">Último backup hoje às 09:41</span>
+</div>
+</div>
+<!-- Internal Tabs Navigation -->
+<div class="bg-surface-container-lowest rounded-xl p-1.5 shadow-sm flex items-center gap-1 overflow-x-auto">
+<button class="tab-btn inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm transition-all" data-tab="perfil">
+<span class="material-symbols-outlined text-base">person</span>
+      Perfil &amp; Dados Pessoais
+    </button>
+<button class="tab-btn inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-all" data-tab="seguranca">
+<span class="material-symbols-outlined text-base">security</span>
+      Segurança &amp; Acesso
+    </button>
+<button class="tab-btn inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-all" data-tab="preferencias">
+<span class="material-symbols-outlined text-base">tune</span>
+      Preferências &amp; Moeda
+    </button>
+<button class="tab-btn inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-all" data-tab="notificacoes">
+<span class="material-symbols-outlined text-base">notifications_active</span>
+      Notificações &amp; Alertas
+    </button>
+<button class="tab-btn inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-all" data-tab="openfinance">
+<span class="material-symbols-outlined text-base">hub</span>
+      Integrações &amp; Open Finance
+    </button>
+<button class="tab-btn inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-all" data-tab="assinatura">
+<span class="material-symbols-outlined text-base">diamond</span>
+      Plano &amp; Assinatura
+    </button>
+</div>
+<!-- Main Content Layout: Profile Tab Content Active -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Form & Core Settings (8 Cols) -->
+<div class="xl:col-span-8 space-y-space-lg">
+<!-- Section 1: Avatar & Identity Header Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="absolute -top-16 -right-16 w-56 h-56 bg-primary-fixed-dim/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md relative z-10">
+<div class="flex items-center gap-space-md">
+<div class="relative group">
+<img class="w-20 h-20 rounded-full object-cover shadow-sm bg-surface-container" data-alt="Close-up professional portrait of Lucas Silveira smiling confident in modern office with soft daylight and emerald accents, shallow depth of field, sharp cinematic 4k headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6x9P8W8zYB21pCR-44_XEuFsSu_8i56zlEncugtteHbmkG5OFWom-GkX-et1yExIRRHglZUktBcEK7ZXwfD0XUxPlix007tkbcBTyaJujbs60HUtLPUAxFXwLO1inSEbrgIvWwJHHAtupXRy2jqME8tkErvUa1ijw68ECuGycdEN5Z5DfFBHNvMdIu8P3Yz7I2scINf4_VX1ICKYgckh5k2hqCM9HkAsuvF9KKsOcNpg4LQ8N8FNx"/>
+<button class="absolute inset-0 bg-inverse-surface/60 rounded-full opacity-0 group-hover:opacity-100 flex items-center justify-center text-on-primary transition-opacity" title="Alterar foto">
+<span class="material-symbols-outlined text-xl">photo_camera</span>
+</button>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Lucas Silveira</h2>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-sm">
+<span class="material-symbols-outlined text-xs">verified</span>
+                  Plano Pro
+                </span>
+</div>
+<p class="font-body-md text-body-md text-secondary">Membro desde Outubro de 2023 • Conta Principal</p>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm pt-0.5">
+<span class="material-symbols-outlined text-sm text-primary">cloud_done</span>
+                ID Supabase: <span class="font-mono text-secondary">usr_89f02c-live</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start sm:self-center">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-base">upload</span>
+              Alterar foto
+            </button>
+<button class="px-space-md py-2 rounded-xl bg-error-container/60 hover:bg-error-container text-on-error-container font-label-md text-label-md font-semibold transition-all inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">delete</span>
+              Remover
+            </button>
+</div>
+</div>
+</section>
+<!-- Section 2: Personal Information Grid -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="space-y-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">badge</span>
+              Dados Pessoais &amp; Contato
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary">Mantenha seus dados sincronizados para relatórios contábeis e fiscais.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2.5 py-1 rounded-md">Campos Obrigatórios *</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Nome Completo -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface-variant">Nome Completo *</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-lg text-outline">person_outline</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-space-md py-2.5 rounded-xl shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" type="text" value="Lucas Silveira"/>
+</div>
+</div>
+<!-- Email -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface-variant">E-mail Principal *</label>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[11px] font-semibold">
+<span class="material-symbols-outlined text-xs">check_circle</span> Verificado
+              </span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-lg text-outline">mail</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-space-md py-2.5 rounded-xl shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" type="email" value="lucas.silveira@email.com"/>
+</div>
+</div>
+<!-- Telefone / WhatsApp -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface-variant">Telefone / WhatsApp</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-lg text-outline">phone_iphone</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-space-md py-2.5 rounded-xl shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" type="text" value="+55 (11) 98765-4321"/>
+</div>
+</div>
+<!-- Profissão / Ocupação -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm font-semibold text-on-surface-variant">Profissão / Ocupação</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-lg text-outline">work_outline</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md pl-10 pr-space-md py-2.5 rounded-xl shadow-sm focus:outline-none focus:bg-surface-container-low transition-all" type="text" value="Product Designer &amp; Consultor"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Financial App Preferences -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="space-y-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">account_balance_wallet</span>
+            Preferências Financeiras do App
+          </h3>
+<p class="font-body-sm text-body-sm text-secondary">Defina convenções numéricas, períodos fiscais e parâmetros de alerta de gastos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-2">
+<!-- Currency -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-2">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-semibold">Moeda Padrão</span>
+<span class="material-symbols-outlined text-base">payments</span>
+</div>
+<select class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold py-2 px-space-sm rounded-lg shadow-sm focus:outline-none cursor-pointer">
+<option selected="">Real Brasileiro (BRL - R$)</option>
+<option>Dólar Americano (USD - $)</option>
+<option>Euro (EUR - €)</option>
+<option>Libra Esterlina (GBP - £)</option>
+</select>
+<p class="font-body-sm text-body-sm text-secondary text-[11px]">Conversões automáticas em câmbio comercial diário.</p>
+</div>
+<!-- Fiscal Month Start -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-2">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-semibold">Início do Mês Fiscal</span>
+<span class="material-symbols-outlined text-base">event_repeat</span>
+</div>
+<select class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold py-2 px-space-sm rounded-lg shadow-sm focus:outline-none cursor-pointer">
+<option selected="">Dia 01 (Padrão)</option>
+<option>Dia 05 (Quinto dia útil)</option>
+<option>Dia 10 (Salário/Pró-labore)</option>
+<option>Dia 15 (Metade do mês)</option>
+<option>Dia 25 (Fechamento cartão)</option>
+</select>
+<p class="font-body-sm text-body-sm text-secondary text-[11px]">Determina o ciclo de cálculos dos orçamentos mensais.</p>
+</div>
+<!-- Date Format -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-2">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-semibold">Formato de Data</span>
+<span class="material-symbols-outlined text-base">calendar_month</span>
+</div>
+<select class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold py-2 px-space-sm rounded-lg shadow-sm focus:outline-none cursor-pointer">
+<option selected="">DD/MM/AAAA (Brasil)</option>
+<option>AAAA-MM-DD (ISO 8601)</option>
+<option>MM/DD/AAAA (EUA)</option>
+</select>
+<p class="font-body-sm text-body-sm text-secondary text-[11px]">Exibição uniforme em extratos e conciliações.</p>
+</div>
+</div>
+<!-- Budget Ceiling Toggle Notification -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">speed</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Teto de Gastos / Alerta Orçamentário Antecipado</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+                Notificar por push e e-mail imediatamente quando qualquer categoria atingir <strong>80% do teto estipulado</strong>.
+              </p>
+</div>
+</div>
+<!-- Active Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="toggle-budget-alert" type="checkbox"/>
+<div class="w-11 h-6 bg-secondary-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-primary after:border-surface-container after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</section>
+<!-- Section 4: Security & Authentication (Supabase Auth Ready) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">shield_person</span>
+              Segurança &amp; Autenticação (Supabase Auth)
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary">Gerencie credenciais criptografadas, chaves e controle de sessões ativas.</p>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-base">key</span>
+            Alterar Senha
+          </button>
+</div>
+<!-- 2FA Status Banner -->
+<div class="bg-primary/5 rounded-xl p-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl">phonelink_lock</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Autenticação em Duas Etapas (2FA)</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[11px] font-semibold">Ativada</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Configurado com Authenticator App (TOTP RFC 6238).</p>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold transition-all shadow-sm">
+            Configurar Backup Chaves
+          </button>
+</div>
+<!-- Active Sessions -->
+<div class="space-y-space-sm pt-1">
+<h4 class="font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">Sessões Conectadas Atualmente</h4>
+<div class="space-y-2">
+<!-- Session 1: Current -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-xl">laptop_mac</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Navegador Chrome no macOS</span>
+<span class="px-2 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-bold">Esta Sessão</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">São Paulo, Brasil • IP 187.54.210.12 • Ativo agora</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" title="Dispositivo seguro">verified_user</span>
+</div>
+<!-- Session 2: Mobile -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-xl">phone_iphone</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">App iOS FinanCerto (iPhone 15 Pro)</span>
+<span class="text-secondary font-body-sm text-body-sm">v2.4.1</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">São Paulo, Brasil • Último acesso hoje às 08:14</p>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-error hover:underline font-semibold" title="Encerrar sessão remota">
+                Desconectar
+              </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Account Danger & Action Area -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="space-y-1 text-center sm:text-left">
+<div class="flex items-center gap-2 justify-center sm:justify-start">
+<span class="material-symbols-outlined text-error text-lg">warning</span>
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Zona de Privacidade &amp; Conta</h4>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Exporte todo o seu histórico financeiro ou solicite exclusão LGPD dos dados.</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap justify-center sm:justify-end">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all inline-flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-base">download</span>
+            Exportar dados (JSON / CSV)
+          </button>
+<button class="px-space-md py-2.5 rounded-xl bg-error-container/40 hover:bg-error-container text-on-error-container font-label-md text-label-md font-semibold transition-all inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person_remove</span>
+            Excluir conta
+          </button>
+</div>
+</section>
+<!-- Fixed / Bottom Bar for Saving Changes -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-lg text-primary">info</span>
+<span class="font-body-sm text-body-sm">Suas alterações são salvas automaticamente na nuvem ao confirmar.</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all">
+            Descartar
+          </button>
+<button class="px-space-xl py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-all shadow-md inline-flex items-center gap-2" id="btn-save">
+<span class="material-symbols-outlined text-lg">check</span>
+            Salvar Alterações
+          </button>
+</div>
+</div>
+</div>
+<!-- Right Column: Contextual Meta & Quick Stats Bento (4 Cols) -->
+<div class="xl:col-span-4 space-y-space-lg">
+<!-- Pro Subscription Card -->
+<div class="bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-xl p-space-lg shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-36 h-36 bg-primary-fixed-dim/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-md relative z-10">
+<span class="px-2.5 py-1 rounded-full bg-on-primary/15 text-on-primary font-label-sm text-label-sm font-semibold tracking-wide uppercase">
+            Plano Ativo
+          </span>
+<span class="material-symbols-outlined text-2xl text-primary-fixed">stars</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold leading-tight mb-1 relative z-10">
+          FinanCerto Pro Anual
+        </h3>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-space-lg relative z-10">
+          Acesso a conexões ilimitadas Open Finance, alertas via WhatsApp e suporte VIP dedicado.
+        </p>
+<div class="bg-black/10 rounded-xl p-space-md mb-space-md space-y-2 relative z-10">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span>Renovação automática</span>
+<span class="font-semibold">28 de Out, 2025</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span>Valor contratado</span>
+<span class="font-semibold">R$ 29,90 / mês</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-primary/80">
+<span>Método</span>
+<span>Mastercard final •• 8841</span>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-xl bg-on-primary text-primary font-label-md text-label-md font-bold hover:bg-surface-container-high transition-all shadow-sm">
+          Gerenciar Assinatura
+        </button>
+</div>
+<!-- Security Health Visual Score -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">verified</span>
+            Saúde da Conta
+          </h4>
+<span class="font-label-sm text-label-sm text-primary font-bold">95/100</span>
+</div>
+<!-- SVG Mini Donut Gauge -->
+<div class="flex items-center gap-space-md">
+<div class="relative w-20 h-20 shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="95, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center font-metric-md text-metric-md text-primary font-bold">
+              A+
+            </div>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Altamente Protegida</p>
+<p class="font-body-sm text-body-sm text-secondary">
+              2FA ativo, e-mail autenticado e sessão de alta confiança registradas no Supabase.
+            </p>
+</div>
+</div>
+<!-- Checklist -->
+<div class="space-y-2 pt-1 font-body-sm text-body-sm">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-base text-primary">check_circle</span>
+<span>E-mail verificado com token seguro</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-base text-primary">check_circle</span>
+<span>Segundo Fator de Autenticação (2FA)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-base text-primary">check_circle</span>
+<span>Senha forte trocada há 42 dias</span>
+</div>
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-base text-outline">radio_button_unchecked</span>
+<span>Chave de segurança física (WebAuthn/FIDO2)</span>
+</div>
+</div>
+</div>
+<!-- Open Finance Connections Teaser Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">account_balance</span>
+            Bancos Conectados
+          </h4>
+<span class="font-label-sm text-label-sm text-primary font-semibold">3 Ativos</span>
+</div>
+<div class="space-y-2.5">
+<!-- Bank 1 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-[#8A05BE]/10 text-[#8A05BE] flex items-center justify-center font-bold text-xs">
+                Nu
+              </div>
+<div>
+<p class="font-label-sm text-label-sm font-semibold text-on-surface">Nubank PF</p>
+<p class="font-body-sm text-body-sm text-[11px] text-secondary">Sync há 15 min</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] font-semibold">Conectado</span>
+</div>
+<!-- Bank 2 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-[#EC7000]/10 text-[#EC7000] flex items-center justify-center font-bold text-xs">
+                It
+              </div>
+<div>
+<p class="font-label-sm text-label-sm font-semibold text-on-surface">Itaú Personnalité</p>
+<p class="font-body-sm text-body-sm text-[11px] text-secondary">Sync há 1 hora</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] font-semibold">Conectado</span>
+</div>
+<!-- Bank 3 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-[#002F6C]/10 text-[#002F6C] flex items-center justify-center font-bold text-xs">
+                XP
+              </div>
+<div>
+<p class="font-label-sm text-label-sm font-semibold text-on-surface">XP Investimentos</p>
+<p class="font-body-sm text-body-sm text-[11px] text-secondary">Sync hoje 06:00</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] font-semibold">Conectado</span>
+</div>
+</div>
+<button class="w-full py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-all inline-flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">add_link</span>
+          Adicionar Nova Instituição
+        </button>
+</div>
+<!-- Quick Tips Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-2">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-base">lightbulb</span>
+          Dica de Inteligência Financeira
+        </div>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed">
+          Definir seu <strong>Início de Mês Fiscal</strong> de acordo com a data em que você recebe a principal fatia de renda garante que seus gráficos de fluxo de caixa nunca fiquem distorcidos com saldos negativos transitórios.
+        </p>
+</div>
+</div>
+</div>
+<!-- Notification Toast Simulation (Hidden by default, triggered on click) -->
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-2xl flex items-center gap-space-sm transition-all transform translate-y-24 opacity-0 pointer-events-none z-50" id="toast-success">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span class="font-label-md text-label-md font-semibold">Alterações salvas com sucesso!</span>
+</div>
+<script>
+    (function() {
+      // Tab switching visual micro-interaction
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabButtons.forEach(b => {
+            b.className = 'tab-btn inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-all';
+          });
+          btn.className = 'tab-btn inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm transition-all';
+        });
+      });
+
+      // Save notification interaction
+      const saveBtn = document.getElementById('btn-save');
+      const toast = document.getElementById('toast-success');
+      if (saveBtn && toast) {
+        saveBtn.addEventListener('click', () => {
+          saveBtn.classList.add('opacity-75');
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-lg animate-spin">refresh</span> Salvando...';
+          
+          setTimeout(() => {
+            saveBtn.classList.remove('opacity-75');
+            saveBtn.innerHTML = '<span class="material-symbols-outlined text-lg">check</span> Salvar Alterações';
+            
+            toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+              toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+            }, 3000);
+          }, 600);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

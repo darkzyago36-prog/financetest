@@ -1,0 +1,6 @@
+{
+  "name": "FinanCerto",
+  "description": "Plataforma inteligente de gestão financeira pessoal, controle de movimentações, categorias, metas, cartões, relatórios e Open Finance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
